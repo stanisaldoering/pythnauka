@@ -19,3 +19,6 @@ def cos():
 
 def d():
     pass
+
+def m():
+    pass
