@@ -28,3 +28,10 @@ def s():
 
 def y():
     pass
+
+a=1
+if a==0:
+    print("jest dobrze")
+else:
+    print("jest zle")
+
