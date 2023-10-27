@@ -25,3 +25,6 @@ def m():
 
 def s():
     pass
+
+def y():
+    pass
