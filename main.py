@@ -22,3 +22,6 @@ def d():
 
 def m():
     pass
+
+def s():
+    pass
