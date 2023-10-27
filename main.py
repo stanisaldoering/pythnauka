@@ -16,3 +16,6 @@ if __name__ == '__main__':
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 def cos():
     pass
+
+def d():
+    pass
