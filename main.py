@@ -1,4 +1,4 @@
-# zadanie 1 
+# zadanie domowe 1 
 
 
 def silnia(n):
