@@ -34,8 +34,9 @@
 def silnia(n):
     w=1
     for i in range(1,n+1):
-        w*=1
+        w*=i
     return w
+print(silnia(4))
 def zadanie():
     eps=0.0001
     wynik=1.0
@@ -51,3 +52,14 @@ def zadanie():
 print(zadanie())
 
 # zadanie domowe
+
+# napisz program ktory obliczy wartosc cos=1 korzystajac ze wzouru
+# cos1=1-1/2!+1/4!+
+# gracz zaczyna z 100 punktami gra polega na 3 kolejnych rzutach ksocia kazdy kolejny rzut zmienia ilosc punktow gracza wedlug ponizszego schemati
+# wypadła 6 punkty pozostaja bez zmain, wypadaa 5 lub 4 punkty gracza mnozymy x2
+# wypadla 3 lub 2 dzielimy 2 porzucamy czesc dziesietna
+# wypadla 1 gracz traci wszystkie punty  oprocz 1
+# zaimplemetnuj wynik 1 rzutu koscia funkcja rzut, napisz funkcje ktora ma przyjmowac punkty i wyniki rzutow
+# a zwaracac liczbe punktow jaka otrzyma gracz na koniec gry
+
+
