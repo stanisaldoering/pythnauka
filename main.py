@@ -41,18 +41,75 @@
 #     return(wynik)
 # print(zadanie())
 
+# x=int(input("podaj wartosc x"))
+# s=int(input("podaj stopien wielomianu"))
+# def stopien(s):
+#   lista=[]
+#   for i in range(0,s+1):
+#     lista.append(int(input("podaj wspolczynnik przy x^"+str(i))))
+#   return lista
+# # print(stopien(s))
+
+# def wielomian(x,lista):
+#   wynik=0
+#   for i in range(0,len(lista)):
+#     wynik+=lista[i]*(x**i)
+#   return wynik
+# print(wielomian(x,stopien(s)))
+
+
+# zadanie 1
+# 1. Napisz program, ktory wczyta dwa wielomiany, a nastepnie wyznaczy wielomian
+# bedacy ich suma i go wypisze.
+
+# x=int(input("podaj wartosc x"))
+# s=int(input("podaj stopien wielomianu"))
+# lista=[]
+# def stopien(s):
+#   for i in range(0,s+1):
+#     lista.append(int(input("podaj wspolczynnik przy x^"+str(i))))
+#   return lista
+# print(stopien(s))
+
+# y=int(input("podaj wartosc drugiego wielomianu"))
+# k=int(input("podaj stopein drugiego wielomianu"))
+# lista2=[]
+# def drugiwielo(k):
+#   for i in range(0,k+1):
+#     lista2.append(int(input("podaj wspolczynnik przy x^"+str(i))))
+#   return lista2
+# print(drugiwielo(k))
+
+# wynik=[]
+# for i in range(0,len(lista)):
+#   wynik.append(lista[i]+lista2[i])
+# print(wynik)
+# for i in range(0,len(wynik)):
+#   print(wynik[i],"x^"+str(i))
+
+
+# zadanie 2 
 x=int(input("podaj wartosc x"))
 s=int(input("podaj stopien wielomianu"))
+lista=[]
 def stopien(s):
-  lista=[]
   for i in range(0,s+1):
     lista.append(int(input("podaj wspolczynnik przy x^"+str(i))))
   return lista
-# print(stopien(s))
+print(stopien(s))
 
-def wielomian(x,lista):
-  wynik=0
-  for i in range(0,len(lista)):
-    wynik+=lista[i]*(x**i)
-  return wynik
-print(wielomian(x,stopien(s)))
+y=int(input("podaj wartosc drugiego wielomianu"))
+k=int(input("podaj stopein drugiego wielomianu"))
+lista2=[]
+def drugiwielo(k):
+  for i in range(0,k+1):
+    lista2.append(int(input("podaj wspolczynnik przy x^"+str(i))))
+  return lista2
+print(drugiwielo(k))
+
+wynik=[]
+for i in range(0,len(lista)):
+  wynik.append(lista[i]*lista2[i])
+print(wynik)
+for i in range(0,len(wynik)):
+  print(wynik[i],"x^"+str(i))
