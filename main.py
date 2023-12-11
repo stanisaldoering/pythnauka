@@ -89,27 +89,57 @@
 
 
 # zadanie 2 
-x=int(input("podaj wartosc x"))
-s=int(input("podaj stopien wielomianu"))
-lista=[]
-def stopien(s):
-  for i in range(0,s+1):
-    lista.append(int(input("podaj wspolczynnik przy x^"+str(i))))
-  return lista
-print(stopien(s))
+# x=int(input("podaj wartosc x"))
+# s=int(input("podaj stopien wielomianu"))
+# lista=[]
+# def stopien(s):
+#   for i in range(0,s+1):
+#     lista.append(int(input("podaj wspolczynnik przy x^"+str(i))))
+#   return lista
+# print(stopien(s))
 
-y=int(input("podaj wartosc drugiego wielomianu"))
-k=int(input("podaj stopein drugiego wielomianu"))
-lista2=[]
-def drugiwielo(k):
-  for i in range(0,k+1):
-    lista2.append(int(input("podaj wspolczynnik przy x^"+str(i))))
-  return lista2
-print(drugiwielo(k))
+# y=int(input("podaj wartosc drugiego wielomianu"))
+# k=int(input("podaj stopein drugiego wielomianu"))
+# lista2=[]
+# def drugiwielo(k):
+#   for i in range(0,k+1):
+#     lista2.append(int(input("podaj wspolczynnik przy x^"+str(i))))
+#   return lista2
+# print(drugiwielo(k))
 
-wynik=[]
-for i in range(0,len(lista)):
-  wynik.append(lista[i]*lista2[i])
-print(wynik)
-for i in range(0,len(wynik)):
-  print(wynik[i],"x^"+str(i))
+# wynik=[]
+# for i in range(0,len(lista)):
+#   wynik.append(lista[i]*lista2[i])
+# print(wynik)
+# for i in range(0,len(wynik)):
+#   print(wynik[i],"x^"+str(i))
+# zada
+
+text="jdsjhddhda"
+x="a"
+list=[]
+def zadanie(text,x):
+  for i in range(0,len(text)):
+    if text[i]==x:
+      list.append(i)
+  return list
+print(zadanie(text,x))
+
+
+lista=["Adam Nowak","Jan kowalski","Maria Zawadzka","Anna Zaradzka","Tomasz Nowak"]
+Inicjaly=[]
+for i in range(len(lista)):
+  x=lista[i]
+  Inicjaly.append(x[0]+x[x.find(" ")+1])
+print(Inicjaly)
+
+tekst='abcccaaaaaaeeeeddddd'
+wzorzec='abcd'
+def wzor(tekst,wzorzec):
+  for i in range(len(tekst),len(wzorzec)+1):
+    if i==wzorzec:
+      return True 
+  return True
+print(wzor(tekst,wzorzec))
+      
+    
