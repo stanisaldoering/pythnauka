@@ -29,3 +29,4 @@ def funckja3(s,k):
     else:
         print("nie")
 print(funckja3(s,k))
+# cos
